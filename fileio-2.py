@@ -1,8 +1,7 @@
-with open('README.md','w') as file:
-    file.write("Hello, Pythonista!")
-try:
-    file = open('README.md')
-    content = file.read()
-    print(content)
-finally:
-    file.close()
+f = open("README.md", "a")
+f.write("Now the file has more content!")
+f.close()
+
+#open and read the file after the appending:
+f = open("README.md", "r")
+print(f.read())

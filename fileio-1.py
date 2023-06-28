@@ -1,6 +1,2 @@
-try:
-    file = open('README.md')
-    content = file.read()
-    print(content)
-finally:
-    file.close()
+f = open("README.md", "r")
+print(f.read())
